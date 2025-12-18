@@ -1,6 +1,6 @@
 from google import genai
 import streamlit as st
-client = genai.Client(api_key="AIzaSyB9EZtljGmpa8aaPmhebyNgxLjcCLTd3c0")
+client = genai.Client(api_key="")
 st.title("📄 JOB-SPECIFIC RESUME")
 name = st.text_input("Full Name")
 contact_number=st.text_input("Contact no.")
@@ -44,3 +44,4 @@ if st.button("Generate Job-Specific Resume"):
         st.subheader("🎯 Job-Specific Optimized Resume")
         st.success(response.text)
         
+
